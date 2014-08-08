@@ -1,0 +1,12 @@
+export(
+	"calculate.meta.survival",
+	"create.survobj",
+	"dichotomize.meta.dataset",
+	"fit.interaction.model",
+	"flatten.expression.data",
+	"flatten.survival.data",
+	"sample.metadata",
+	"score.multifeature.signature",
+	"survival.truncate",
+	"univariate.survival.analysis"
+	);

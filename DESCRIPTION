@@ -1,0 +1,11 @@
+Package: BoutrosLab.prognosticsignature.general
+Version: 1.3.13
+Type: Package
+Title: Functions to work with prognostic signature datasets
+Date: 2014-01-14
+Author: Dr. Paul C. Boutros
+Maintainer: Paul Boutros <Paul.Boutros@oicr.on.ca>
+Depends: R (>= 2.15.1), survival (>= 2.36-14), BoutrosLab.statistics.survival (>= 0.3.4)
+Description: Functions to work with prognostic signature datasets
+License: GPL-2
+LazyLoad: yes
