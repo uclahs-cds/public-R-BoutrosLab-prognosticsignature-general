@@ -3,7 +3,8 @@
 \title{Fit a meta-analytic Cox proportional hazards model to a single feature}
 \description{Takes a meta-analysis data object and fits a Cox proportional hazards model (possibly with adjustment for some specific covariates) by median-dichotomizing patients within each individual dataset.}
 \usage{
-calculate.meta.survival(feature.name, expression.data, survival.data, rounding = 3, other.data = NULL);
+calculate.meta.survival(feature.name, expression.data, survival.data, rounding = 3,
+    other.data = NULL);
 }
 \arguments{
   \item{feature.name}{Character indicate what feature (gene/probe/etc.) should be extracted for analysis}
