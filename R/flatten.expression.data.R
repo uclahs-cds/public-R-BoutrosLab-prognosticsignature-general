@@ -40,7 +40,7 @@ flatten.expression.data <- function(object) {
 
 		# reset the rownames
 		rownames(to.return) <- to.return$Row.names;
-		to.return <- subset(to.return, select = -Row.names);
+		to.return <- subset(to.return, select = -(to.return$Row.names));
 
 		}
 
