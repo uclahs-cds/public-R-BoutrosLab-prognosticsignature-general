@@ -12,11 +12,14 @@ create.survobj(annotation);
 \author{Paul C. Boutros}
 \examples{
 \dontrun{
+#FIXME
 if (require(BoutrosLab.datasets.breast.cancer) && file.exists(paste(.libPaths()[1], 
     '/BoutrosLab.datasets.breast.cancer/datasets/Bild/patient_annotation.txt', sep=''))) {
 
 	annotation <- read.table(
-		paste(.libPaths()[1], '/BoutrosLab.datasets.breast.cancer/datasets/Bild/patient_annotation.txt', sep=''),
+		paste(.libPaths()[1],
+		    '/BoutrosLab.datasets.breast.cancer/datasets/Bild/patient_annotation.txt',
+		     sep=''),
 		header = TRUE,
 		row.names = 1,
 		sep = "\t"
