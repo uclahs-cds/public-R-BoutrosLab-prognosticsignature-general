@@ -16,7 +16,6 @@ score.multifeature.signature(expression.data, survival.data, feature.names,
 }
 \value{Returns a data-frame with patients as rows and columns as (group, survtime, survstat, score, max.score, dataset, patient.ID) tuples.}
 \author{Paul C. Boutros}
-\seealso{\code{\link[BoutrosLab.datasets.nsclc]{load.nsclc.datasets}}, \code{\link[BoutrosLab.datasets.gbm]{load.gbm.datasets}}}
 \examples{
 \dontrun{
 if (require(BoutrosLab.datasets.breast.cancer)) {
