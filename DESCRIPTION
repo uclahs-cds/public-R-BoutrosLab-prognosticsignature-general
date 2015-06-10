@@ -1,7 +1,7 @@
 Package: BoutrosLab.prognosticsignature.general
 Version: 1.3.13
 Type: Package
-Title: Functions to work with prognostic signature datasets
+Title: Functions to Work with Prognostic Signature Datasets
 Date: 2014-01-14
 Author: Dr. Paul C. Boutros
 Maintainer: Paul Boutros <Paul.Boutros@oicr.on.ca>
