@@ -11,3 +11,4 @@ export(
 	"univariate.survival.analysis"
 	);
 import (BoutrosLab.statistics.survival, survival);
+importFrom("stats", "median", "p.adjust");
