@@ -1,0 +1,10 @@
+Category: tool
+Description: Functions to work with prognostic signature datasets.
+Maintainers: Paul Boutros
+Contributors: Paul Boutros
+Languages:
+  - R
+Dependencies:
+  - survival (>= 2.36-14)
+  - BoutrosLab.statistics.survival (>= 0.3.4)
+Version: 1.3.13
