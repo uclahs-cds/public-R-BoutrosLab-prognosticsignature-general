@@ -65,7 +65,7 @@ score.multifeature.signature <- function(expression.data, survival.data, feature
 				max.scores <- max.scores + as.numeric( !is.na(values) );
 
 				# convert into score = {+1/high, -1/low} coding
-                scores.temp <- rep(0, length = length(values));
+				scores.temp <- rep(0, length = length(values));
 				
 				if (is.null(feature.thresholds)){
 					# median dichotomize
