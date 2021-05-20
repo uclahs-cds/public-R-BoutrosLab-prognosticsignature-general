@@ -64,18 +64,19 @@ score.multifeature.signature <- function(expression.data, survival.data, feature
 				# calculate the maximum possible score each patient could get
 				max.scores <- max.scores + as.numeric( !is.na(values) );
 
+				# convert into score = {+1/high, -1/low} coding
+                scores.temp <- rep(0, length = length(values));
+				
 				if (is.null(feature.thresholds)){
 					# median dichotomize
-					scores.temp <- values > median(as.numeric(values), na.rm = TRUE);
+					scores.temp[values > median(as.numeric(values), na.rm = TRUE)] <-  1;
+					scores.temp[values < median(as.numeric(values), na.rm = TRUE)] <- -1;
 					}
 				else{
 					# use provided threshold
-					scores.temp <- values > feature.thresholds[j];
+					scores.temp[values > feature.thresholds[j]] <-  1;
+					scores.temp[values < feature.thresholds[j]] <- -1;
 					}
-
-				# convert into score = {+1/high, -1/low} coding
-				scores.temp[scores.temp == TRUE] <-  1;
-				scores.temp[scores.temp != 1]    <- -1;
 
 				# weigh scores and keep a running total
 				scores.temp <- scores.temp * feature.weight
@@ -126,4 +127,3 @@ score.multifeature.signature <- function(expression.data, survival.data, feature
 	return(results.summary);
 
 	}
-
